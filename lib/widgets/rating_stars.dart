@@ -9,12 +9,14 @@ class RatingStars extends StatelessWidget {
   Widget build(BuildContext context) {
     String stars = '';
     for (int i = 0; i < rating; i++) {
-      stars += '⭐ ';
+      stars += '⭐  ';
     }
     stars.trim();
     return Text(
       stars,
-      style: TextStyle(fontSize: 18.0),
+      style: TextStyle(
+        fontSize: 18.0,
+      ),
     );
   }
 }
